@@ -1,0 +1,21 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [],
+    "editor.inlineSuggest.enabled": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.suggest.showWords": true,
+    "editor.suggest.showSnippets": true,
+    "editor.snippetSuggestions": "top",
+    "java.completion.enabled": true,
+    "github.copilot.enable": {
+        "java": false
+    }
+}
