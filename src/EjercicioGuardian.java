@@ -1,3 +1,5 @@
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
@@ -8,9 +10,16 @@ public class EjercicioGuardian {
         ProcessBuilder pb2 = new ProcessBuilder("tasklist");
         try (Process p2 = pb2.start();
             InputStream entradaLista = p2.getInputStream();
-            InputStreamReader
-        ) {
+            InputStreamReader lectorEntrada= new InputStreamReader(entradaLista);
+            BufferedReader buferLector= new BufferedReader(lectorEntrada);
 
+        ) {
+        String linea;
+        while((linea=buferLector.readLine())!=null){
+            if(linea.contains("firefox")){
+
+            }
+        }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
